@@ -1,0 +1,12 @@
+usage: hexdump.py [-h] [-w {8,16,32}] [-o] [--from FROM_ADDR]
+                  [--length LENGTH] [--type {u8,u32}] [--update UPDATE]
+                  file
+    
+    Examples: 
+        hexdump.py /dev/file
+        hexdump.py /dev/file --pattern=00\w+ 
+        hexdump.py /dev/file --pattern=00\w+ -o
+        hexdump.py /dev/file --length=100 --type=u32 -w=16 --update=0.1
+        hexdump.py /dev/file --length=100 --from=200 --type=u32 -w=32 --update 0.5 -o
+        hexdump.py /dev/file --length=400 --from=10 --type=u8 -w=8 --update=0.1 --output
+
